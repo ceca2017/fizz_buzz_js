@@ -14,4 +14,8 @@ describe("SampleObject", function() {
 
     expect(subject.mySecondFunction(10, 5)).toEqual(15);
   });
+
+  it("myThirdFunction returns true", function(){
+    expect(subject.myThirdFunction()).toEqual(true);
+  })
 });

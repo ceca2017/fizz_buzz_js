@@ -8,3 +8,7 @@ SampleObject.prototype.mySecondFunction = function (val_1, val_2) {
   var result = val_1 + val_2;
   return result
 }
+
+SampleObject.prototype.myThirdFunction = function() {
+  return true;
+}
