@@ -17,12 +17,12 @@ describe("Calculator", function() {
     expect(subject.fizzBuzz(5)).toEqual("buzz");
   });
 
-  it("passing 15 should return fizz_buzz", function() {
-    expect(subject.fizzBuzz(15)).toEqual("fizz_buzz");
+  it("passing 15 should return fizz buzz", function() {
+    expect(subject.fizzBuzz(15)).toEqual("fizz buzz");
   });
 
-  it("passing 0 should return fizz_buzz", function() {
-    expect(subject.fizzBuzz(0)).toEqual("fizz_buzz");
+  it("passing 0 should return fizz buzz", function() {
+    expect(subject.fizzBuzz(0)).toEqual("fizz buzz");
   });
 
   it("passing 'abc' should return 'not a number'", function() {

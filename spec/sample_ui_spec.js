@@ -1,4 +1,4 @@
-describe('Partial sample', function() {
+ describe('Partial sample', function() {
   beforeEach(function() {
     // We can load fixtures using this method:
     //jasmine.getFixtures().clearCache();
@@ -15,7 +15,7 @@ describe('Partial sample', function() {
 
   afterEach(function() {
     // If you need to reset some values after each testing
-    // you can do it here. 
+    // you can do it here.
   });
 
   describe("displays text", function() {
@@ -24,6 +24,12 @@ describe('Partial sample', function() {
       $('#text').val('Some random text...');
       $('#click_me').trigger('click');
       expect($('#display_message').text()).toBe('Some random text...');
+    });
+
+    it("when button is clicked again", function() {
+      $('#text').val('Some other text...');
+      $('#click_me').trigger('click');
+      expect($('#display_message').text()).toBe('Some other text...');
     });
   });
 });

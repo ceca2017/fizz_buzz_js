@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Fizz Buzz</title>
-  <link rel="stylesheet" href="assets/style.css" type="text/css">
-  <script src="assets/js/calculator.js"></script>
-  <script src="assets/js/jquery-2.1.1.min.js"></script>
-  <script src="assets/js/fizz_buzz_ui.js"></script>
-</head>
-<body>
+  <div id="fizz_buzz">
+    <h1>Welcome to the Fizz Buzz game</h1>
+    <p>Enter a number and see the result. Can you figure out the logic?</p>
+    <form>
+      <p>Enter a number: <input type="text" id="input_num"></p>
+      <input type="button" id="fb_button" value="Play Fizz Buzz!">
+    </form>
+      <p id="return_message"></p>
+  </div>
 
-</body>
-</html>
+  <script type="text/javascript">
+    $(document).ready(onReadyEventsIndex);
+  </script>
