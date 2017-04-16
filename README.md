@@ -1,3 +1,24 @@
+Instructions:
+To play the game, enter a number in the box and click on the button.
+See if you can figure out the logic. Happy playing!
+
+
+Internal comments (not for shipped solution :))
+Even though the fizz_buzz could be created as a function only (not wrapped in a “class”), I created it in a class called Calculator. Thinking this would then make it scalable in the future? Is this best practice? Do programmers typically create a “class”?
+In the test sample there is a file called “sample_partial.html”. It somehow can see the file app.js (having the js code). Where is this defined??
+
+When doing the Jasmine tests, it seems that you have to have the ui html file in the fixtures folder? I tried to add it to the root and change the fixtures path, but it did not seem to work.
+
+If the html files have to be in the spec/fixtures folder, does this mean that you copy these files to their proper locations after they are tested (index.html to the root for instance)?
+
+In the beginning I did not add the script ‘document ready’ code in the index.html file, but I had it in the fizz_buzz_ui.js file. Then the first test passed, but not the others. I tried to reset the values, but with no success. After adding the ‘document ready’ script in the index.html file and then calling a var set in fizz_buzz_ui.js it worked.
+How can the first test pass?
+Why do you have the shorter script in the index.html? It seems you should only have the body tag code (excluding the body tag).
+
+I had some strange CSS problems. Not sure what they were coming from. I had a div id for the fizz buzz game. The browser would not show the settings for the div id though. I had the settings in a separate css file and the div id last. It would not work even when changing name of the id or changing it to a class. I moved it to the style tag in the index document. It would still not work. I also ran the index file in incognito, but that did not help. Taking out the ending curly bracket made it strangely work. Adding it back would then make it still work. Very strange! However having it in a separate file still does not work. To add, in the css I have another id and settings for h1 and they both work fine.
+
+
+
 ## JS Test Boilerplate 0.1 (WIP)
 [![Build Status](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate.svg?branch=master)](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/CraftAcademy/karma-jquery-jasmine_boilerplate/badge.svg?branch=master)](https://coveralls.io/github/CraftAcademy/karma-jquery-jasmine_boilerplate?branch=master)
