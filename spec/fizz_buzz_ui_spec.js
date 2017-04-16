@@ -9,7 +9,7 @@ describe("fizz_buzz_ui", function() {
 
     // Or this:
     jasmine.getFixtures().fixturesPath = 'base/spec/fixtures';
-    loadFixtures('index.html');
+    loadFixtures('index_partial.html');
     $.holdReady(false);
 
   });

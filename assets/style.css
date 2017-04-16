@@ -1,0 +1,20 @@
+#fizz_buzz {
+  font-family: arial, sans-serif;
+  background-color: Black;
+  color: White;
+  position: relative;
+  min-width: 300px;
+  max-width: 600px;
+  border: 10px groove #af3432;
+  border-radius: 10px;
+  padding: 10px 30px 30px 30px;
+  margin: 30px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+#result {
+  padding-top: 15px;
+}
