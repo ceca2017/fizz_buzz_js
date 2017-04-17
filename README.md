@@ -20,7 +20,7 @@ How can the first test pass (I could change the order of the tests or xit the ot
 
 I had some strange CSS problems. Not sure what they were coming from. I had a div id for the fizz buzz game. The browser would not show the settings for the div id though. I had the settings in a separate css file and the div id last. It would not work even when changing name of the id or changing it to a class. I moved it to the style tag in the index document. It would still not work. I also ran the index file in incognito, but that did not help. Taking out the ending curly bracket made it strangely work. Adding it back would then make it still work. Very strange! However having it in a separate file still does not work. To add, in the css I have another id and settings for h1 and they both work fine.
 
-
+ 
 
 ## JS Test Boilerplate 0.1 (WIP)
 [![Build Status](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate.svg?branch=master)](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate)
