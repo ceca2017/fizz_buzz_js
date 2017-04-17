@@ -1,19 +1,22 @@
 Instructions:
 To play the game, enter a number in the box and click on the button.
-See if you can figure out the logic. Happy playing!
+See if you can figure out the logic!
 
 
-Internal comments (not for shipped solution :))
+Internal comments and questions (not for shipped solution :))
+How to gamify the solution: The "game" as is, may not be very exciting and once it is solved, it cannot be played more. A way to make it more main stream and reusable could be to tell the logic to the player. And then have a random number to be displayed to the player. He would then have 4 buttons to choose if the number displayed is: the number itself, fizz, buzz or fizz buzz. The player would only have a few seconds to give the answer. Wrong or late answer and you loose a life. After a number of right answers, the time to give a right answer will decrease. Total score is the number of right answers after all lives are lost. Naturally there will be a high-score table. If several players, then they would take turns after loosing a life. Arranging the info and buttons in a good way when rendered on mobile devices, should make it possible to play on them as well.
+
 Even though the fizz_buzz could be created as a function only (not wrapped in a “class”), I created it in a class called Calculator. Thinking this would then make it scalable in the future? Is this best practice? Do programmers typically create a “class”?
+
 In the test sample there is a file called “sample_partial.html”. It somehow can see the file app.js (having the js code). Where is this defined??
 
 When doing the Jasmine tests, it seems that you have to have the ui html file in the fixtures folder? I tried to add it to the root and change the fixtures path, but it did not seem to work.
 
-If the html files have to be in the spec/fixtures folder, does this mean that you copy these files to their proper locations after they are tested (index.html to the root for instance)?
+If the html files have to be in the spec/fixtures folder, does this mean that you copy these files to their proper locations after they are tested (index.html to the root for instance )? and then add the rest of the code outside of the body-tag)?
+And it seems you can only have the code within the body-tag for the html file in spec/fixtures?
 
 In the beginning I did not add the script ‘document ready’ code in the index.html file, but I had it in the fizz_buzz_ui.js file. Then the first test passed, but not the others. I tried to reset the values, but with no success. After adding the ‘document ready’ script in the index.html file and then calling a var set in fizz_buzz_ui.js it worked.
-How can the first test pass?
-Why do you have the shorter script in the index.html? It seems you should only have the body tag code (excluding the body tag).
+How can the first test pass (I could change the order of the tests or xit the others, and the first one tested would always pass)?
 
 I had some strange CSS problems. Not sure what they were coming from. I had a div id for the fizz buzz game. The browser would not show the settings for the div id though. I had the settings in a separate css file and the div id last. It would not work even when changing name of the id or changing it to a class. I moved it to the style tag in the index document. It would still not work. I also ran the index file in incognito, but that did not help. Taking out the ending curly bracket made it strangely work. Adding it back would then make it still work. Very strange! However having it in a separate file still does not work. To add, in the css I have another id and settings for h1 and they both work fine.
 
