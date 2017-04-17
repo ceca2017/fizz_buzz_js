@@ -3,6 +3,8 @@ To play the game, enter a number in the box and click on the button.
 See if you can figure out the logic!
 
 
+[![Coverage Status](https://coveralls.io/repos/github/ceca2017/fizz_buzz_js/badge.svg?branch=master)](https://coveralls.io/github/ceca2017/fizz_buzz_js?branch=master)
+
 Internal comments and questions (not for shipped solution :))
 How to gamify the solution: The "game" as is, may not be very exciting and once it is solved, it cannot be played more. A way to make it more main stream and reusable could be to tell the logic to the player. And then have a random number to be displayed to the player. He would then have 4 buttons to choose if the number displayed is: the number itself, fizz, buzz or fizz buzz. The player would only have a few seconds to give the answer. Wrong or late answer and you loose a life. After a number of right answers, the time to give a right answer will decrease. Total score is the number of right answers after all lives are lost. Naturally there will be a high-score table. If several players, then they would take turns after loosing a life. Arranging the info and buttons in a good way when rendered on mobile devices, should make it possible to play on them as well.
 
@@ -20,7 +22,7 @@ How can the first test pass (I could change the order of the tests or xit the ot
 
 I had some strange CSS problems. Not sure what they were coming from. I had a div id for the fizz buzz game. The browser would not show the settings for the div id though. I had the settings in a separate css file and the div id last. It would not work even when changing name of the id or changing it to a class. I moved it to the style tag in the index document. It would still not work. I also ran the index file in incognito, but that did not help. Taking out the ending curly bracket made it strangely work. Adding it back would then make it still work. Very strange! However having it in a separate file still does not work. To add, in the css I have another id and settings for h1 and they both work fine.
 
- 
+
 
 ## JS Test Boilerplate 0.1 (WIP)
 [![Build Status](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate.svg?branch=master)](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate)
