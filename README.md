@@ -5,8 +5,12 @@ See if you can figure out the logic!
 
 [![Coverage Status](https://coveralls.io/repos/github/ceca2017/fizz_buzz_js/badge.svg?branch=master)](https://coveralls.io/github/ceca2017/fizz_buzz_js?branch=master)
 
-Internal comments and questions (not for shipped solution :))
-How to gamify the solution: The "game" as is, may not be very exciting and once it is solved, it cannot be played more. A way to make it more main stream and reusable could be to tell the logic to the player. And then have a random number to be displayed to the player. He would then have 4 buttons to choose if the number displayed is: the number itself, fizz, buzz or fizz buzz. The player would only have a few seconds to give the answer. Wrong or late answer and you loose a life. After a number of right answers, the time to give a right answer will decrease. Total score is the number of right answers after all lives are lost. Naturally there will be a high-score table. If several players, then they would take turns after loosing a life. Arranging the info and buttons in a good way when rendered on mobile devices, should make it possible to play on them as well.
+Not sure how to activate the coverage. I found the following info at https://github.com/nickmerwin/node-coveralls. It says "to pipe the lcov output to ./node_modules/coveralls/bin/coveralls.js". I have not found info on how to do this though. I also found the info:
+"cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js". But this sounds like a manual run in the terminal? So some guidance here would be great :)
+
+I think the TravisCI seems to work OK. I see some results at their website.
+
+Some ideas on how to gamify the solution: The "game" as is, may not be very exciting and once it is solved, it cannot be played more. A way to make it more main stream and reusable could be to tell the logic to the player. And then have a random number to be displayed to the player. He would then have 4 buttons to choose if the number displayed is: the number itself, fizz, buzz or fizz buzz. The player would only have a few seconds to give the answer. Wrong or late answer and you loose a life. After a number of right answers, the time to give a right answer will decrease. Total score is the number of right answers after all lives are lost. Naturally there will be a high-score table. If several players, then they would take turns after loosing a life. Arranging the info and buttons in a good way when rendered on mobile devices, should make it possible to play on them as well.
 
 Even though the fizz_buzz could be created as a function only (not wrapped in a “class”), I created it in a class called Calculator. Thinking this would then make it scalable in the future? Is this best practice? Do programmers typically create a “class”?
 
